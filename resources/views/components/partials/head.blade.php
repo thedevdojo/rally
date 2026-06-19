@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>{{ $title ? $title.' · ' config('app.name') : config('app.name') . ' — Project management with momentum' }}</title>
+<title>{{ $title ? $title.' · ' . config('app.name') : config('app.name') . ' — Project management with momentum' }}</title>
 <meta name="description" content="{{ $description ?? config('app.name') . ' is a beautifully fast project management tool for teams who ship. Plan, prioritize and track work without the clutter.' }}">
 
 {{-- Prevent theme flash --}}
