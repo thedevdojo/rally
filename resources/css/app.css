@@ -1,8 +1,10 @@
 @import 'tailwindcss';
 
+@import './components.css';
 @source '../views';
 @source '../../app';
 @source '../../packages/devdojo/*/resources/views';
+@source '../../vendor/devdojo/*/resources';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 
 /* Class-based dark mode (dark-first product, persisted toggle). */
