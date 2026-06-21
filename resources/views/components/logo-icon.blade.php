@@ -11,9 +11,9 @@
     // A solid `color` wins; otherwise lay the gradient over the graphic.
     $fill = $color ?? "url(#{$gradientId})";
 
-    // A caller-supplied class fully replaces the default size so sizing is
-    // deterministic (no `size-8 size-10` conflicts when overriding).
-    $classes = $attributes->get('class', 'size-8');
+    // The icon is height-driven by its parent box (matching the default project),
+    // so it defaults to `h-full w-auto`. A caller-supplied class fully replaces this.
+    $classes = $attributes->get('class', 'h-full w-auto');
 @endphp
 
 <svg {{ $attributes->except('class') }} class="{{ $classes }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.5 86">
